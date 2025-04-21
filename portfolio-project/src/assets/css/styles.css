@@ -1,29 +1,52 @@
-body {
-    background-color: #000000; /* Fond noir */
-    color: #ffffff; /* Texte blanc */
+html, body {
+    font-family: 'Poppins', sans-serif; /* Applique la police Poppins */
+    background-color: #ffffff; /* Fond blanc */
+    color: #000000; /* Texte noir */
+    height: 100%; /* Assure que le HTML et le body occupent toute la hauteur de la fenêtre */
+    margin: 0; /* Supprime les marges par défaut */
+    display: flex;
+    flex-direction: column; /* Organise les éléments en colonne */
+}
+
+main {
+    flex: 1; /* Permet au contenu principal de prendre tout l'espace disponible */
+    display: flex; /* Active Flexbox pour centrer le contenu */
+    flex-direction: column; /* Organise les éléments en colonne */
+    justify-content: center; /* Centre verticalement le contenu */
+    align-items: center; /* Centre horizontalement le contenu */
+    text-align: center; /* Centre le texte */
 }
 
 a {
-    color: #1e90ff; /* Lien en bleu clair pour contraste */
+    color: #0000ff; /* Lien en bleu pour contraste */
+    text-decoration: none;
 }
 
 a:hover {
-    color: #00bfff; /* Lien en bleu plus clair au survol */
+    color: #00008b; /* Lien en bleu foncé au survol */
 }
 
 .card {
-    background: #1a1a1a; /* Fond des cartes en gris foncé */
-    color: #ffffff; /* Texte blanc */
-    border: 1px solid #333333; /* Bordure gris foncé */
+    background: #f9f9f9; /* Fond des cartes en gris très clair */
+    color: #000000; /* Texte noir */
+    border: 1px solid #cccccc; /* Bordure gris clair */
 }
 
 .btn {
-    background-color: #1e90ff; /* Bouton bleu clair */
-    color: #ffffff; /* Texte blanc */
+    display: inline-block;
+    padding: 10px 15px; /* Ajoute de l'espace intérieur */
+    border: 2px solid #0077b5; /* Bordure bleue similaire à LinkedIn */
+    color: #0077b5; /* Texte bleu */
+    background-color: #ffffff; /* Fond blanc */
+    border-radius: 5px; /* Coins arrondis */
+    text-decoration: none; /* Supprime le soulignement */
+    font-weight: 600; /* Texte légèrement en gras */
+    transition: all 0.3s ease; /* Animation pour les interactions */
 }
 
 .btn:hover {
-    background-color: #00bfff; /* Bouton bleu plus clair au survol */
+    background-color: #0077b5; /* Fond bleu au survol */
+    color: #ffffff; /* Texte blanc au survol */
 }
 
 .presentation ul {
@@ -62,18 +85,19 @@ a:hover {
 
 header {
     display: flex; /* Active Flexbox */
-    justify-content: space-between; /* Espace entre le titre et les liens */
+    justify-content: center; /* Centre horizontalement les éléments */
     align-items: center; /* Aligne verticalement les éléments */
-    background-color: #000000; /* Fond noir */
-    color: #ffffff; /* Texte blanc */
+    background-color: #ffffff; /* Fond blanc */
+    color: #000000; /* Texte noir */
     padding: 10px 20px; /* Ajoute un peu d'espace intérieur */
+    position: relative; /* Nécessaire pour positionner le trait */
 }
 
 header h1 {
     margin: 0; /* Supprime la marge par défaut */
     font-size: 24px; /* Taille de la police pour le titre */
-    text-align: center; /* Centre le texte */
-    flex: 1; /* Permet au titre de prendre de l'espace */
+    position: absolute; /* Permet de positionner le titre indépendamment */
+    left: 20px; /* Place le titre à gauche */
 }
 
 header nav ul {
@@ -88,19 +112,37 @@ header nav ul li {
 }
 
 header nav ul li a {
-    text-decoration: none; /* Supprime le soulignement des liens */
-    color: #ffffff; /* Texte blanc */
+    display: inline-block; /* Rend les liens similaires au bouton LinkedIn */
+    padding: 10px 15px; /* Ajoute de l'espace intérieur pour correspondre au bouton LinkedIn */
+    border: 2px solid transparent; /* Ajoute une bordure invisible pour un alignement uniforme */
+    color: #000000; /* Texte noir */
+    text-decoration: none; /* Supprime le soulignement */
     font-size: 16px; /* Taille de la police */
-    transition: color 0.3s ease; /* Animation pour le survol */
+    font-weight: 600; /* Texte légèrement en gras */
+    transition: all 0.3s ease; /* Animation pour les interactions */
 }
 
 header nav ul li a:hover {
     color: #1e90ff; /* Change la couleur au survol */
+    border-color: #1e90ff; /* Ajoute une bordure bleue au survol */
+}
+
+header::after {
+    content: ""; /* Ajoute un élément décoratif */
+    display: block;
+    width: 100%; /* Limite la largeur du trait */
+    height: 2px; /* Épaisseur du trait */
+    background-color: #000000; /* Couleur noire pour le trait */
+    margin: 0 auto; /* Centre le trait horizontal */
+    position: absolute;
+    bottom: 0; /* Place le trait en bas du header */
+    left: 0;
+    right: 0;
 }
 
 footer {
-    background-color: #000000; /* Fond noir */
-    color: #ffffff; /* Texte blanc */
+    background-color: #ffffff; /* Fond noir */
+    color: #000000; /* Texte blanc */
     padding: 10px 20px; /* Ajoute un peu d'espace intérieur */
     text-align: center; /* Centre le texte dans le footer */
     font-size: 14px; /* Taille de la police pour le footer */
