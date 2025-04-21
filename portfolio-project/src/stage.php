@@ -1,30 +1,16 @@
 <?php
-// filepath: c:\wamp64\www\Portfolio\src\stage.php
-
 include 'includes/header.php';
 ?>
 
-<div class="container">
-    <h1>Internships and Practical Experiences</h1>
-    <p>Welcome to the stage page where I share my internship experiences and practical learning outcomes.</p>
-
-    <h2>Internship at Company XYZ</h2>
-    <p>During my internship at Company XYZ, I worked on various projects that enhanced my skills in web development. I was involved in:</p>
-    <ul>
-        <li>Developing responsive web applications using PHP and JavaScript.</li>
-        <li>Collaborating with a team of developers to improve existing codebases.</li>
-        <li>Participating in daily stand-up meetings and contributing to project planning.</li>
-    </ul>
-    <p>Outcome: Gained hands-on experience in a professional environment and improved my coding skills significantly.</p>
-
-    <h2>Internship at Company ABC</h2>
-    <p>At Company ABC, I focused on software testing and quality assurance. My responsibilities included:</p>
-    <ul>
-        <li>Creating and executing test cases for various software applications.</li>
-        <li>Identifying bugs and collaborating with developers to resolve issues.</li>
-        <li>Documenting test results and providing feedback for improvements.</li>
-    </ul>
-    <p>Outcome: Developed a keen eye for detail and learned the importance of quality in software development.</p>
+<div class="stage">
+    <h1>Stage 1ère année :</h1>
+    <p><strong>Nom de l'entreprise :</strong> AZIEBAT CENTRE</p>
+    <p><strong>Logo de l'entreprise :</strong></p>
+    <img src="assets/images/aziebat-logo.jpg" alt="Logo de l'entreprise AZIEBAT" style="width: 150px; height: auto;">
+    <p><strong>Nom du responsable :</strong> MIAN</p>
+    <p><strong>Site de l'entreprise :</strong> <a href="https://aziebat.com" target="_blank">aziebat.com</a></p>
+    <p><strong>Date de stage :</strong> 21 Mai au 5 Juillet</p>
+    <p><strong>Sujet du stage :</strong> Amélioration du site web déjà existant à l'aide de l'outil Wordpress</p>
 </div>
 
 <?php

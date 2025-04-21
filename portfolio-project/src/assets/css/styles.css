@@ -26,6 +26,40 @@ a:hover {
     background-color: #00bfff; /* Bouton bleu plus clair au survol */
 }
 
+.presentation ul {
+    list-style: none; /* Supprime les puces */
+    padding: 0;
+}
+
+.presentation ul li {
+    margin-bottom: 20px; /* Ajoute un espacement entre les éléments */
+    line-height: 1.6; /* Améliore la lisibilité */
+}
+
+.presentation ul li strong {
+    font-size: 18px; /* Augmente la taille des titres */
+    color: #ffffff; /* Texte blanc */
+}
+
+.stage img {
+    margin: 10px 0;
+    display: block;
+}
+
+.stage p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.stage a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.stage a:hover {
+    color: #00bfff;
+}
+
 header {
     display: flex; /* Active Flexbox */
     justify-content: space-between; /* Espace entre le titre et les liens */

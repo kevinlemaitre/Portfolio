@@ -5,22 +5,24 @@ include 'includes/header.php';
 ?>
 
 <div class="presentation">
-    <h1>About Me</h1>
-    <p>Welcome to my portfolio! My name is [Your Name], and I am a [Your Profession/Field].</p>
-    
-    <h2>Background</h2>
-    <p>I have a background in [Your Background Information]. I have always been passionate about [Your Passion/Interest].</p>
-    
-    <h2>Skills</h2>
+    <h1>Formation :</h1>
     <ul>
-        <li>[Skill 1]</li>
-        <li>[Skill 2]</li>
-        <li>[Skill 3]</li>
-        <li>[Skill 4]</li>
+        <li>
+            <strong>2023-2025 - BTS SIO - Lycée Benjamin Franklin</strong><br>
+            Découverte de langage informatique : HTML, CSS, JAVA, PHP. TP et cours permettant un apprentissage plus complet, 
+            cours de certification qui met en place une démarche sur l'orientation futur.
+        </li>
+        <li>
+            <strong>2021-2023 - BAC STI2D - Lycée Benjamin Franklin</strong><br>
+            Obtention du BAC STI2D avec mention bien, équipe de projet avec des diagrammes : diagramme de cas d'utilisation, 
+            diagramme de Gantt. Projet d'un drone qui lave les toits d'un bâtiment.
+        </li>
+        <li>
+            <strong>2020-2021 - Seconde Générale - Lycée Jacques Monod</strong><br>
+            Année de transition dans mon parcours scolaire. Durant celle-ci je me suis remis en question, j'ai préféré me concentrer 
+            sur le changement d'orientation car j'ai directement su que la seconde générale ne me correspondait pas.
+        </li>
     </ul>
-    
-    <h2>Objectives</h2>
-    <p>My objective is to [Your Objectives]. I am eager to learn and grow in the field of [Your Field/Industry].</p>
 </div>
 
 <?php
