@@ -28,6 +28,45 @@ main {
     text-align: center; /* Centre le texte */
 }
 
+.tp-premiere-annee {
+    margin-top: 40px; /* Ajoute un espacement au-dessus de la section */
+}
+
+.tp-content {
+    display: flex; /* Active Flexbox pour aligner l'image et le texte */
+    align-items: center; /* Centre verticalement le contenu */
+    gap: 20px; /* Ajoute un espace entre l'image et le texte */
+    margin-bottom: 40px; /* Ajoute un espacement entre les blocs */
+    flex-wrap: wrap; /* Permet de passer en colonne sur les petits écrans */
+}
+
+.tp-image {
+    width: 300px; /* Largeur de l'image */
+    height: auto; /* Maintient les proportions de l'image */
+    border-radius: 10px; /* Ajoute des coins arrondis */
+    flex-shrink: 0; /* Empêche l'image de rétrécir */
+}
+
+.tp-details {
+    max-width: 600px; /* Limite la largeur du texte */
+    flex: 1; /* Permet au texte de prendre tout l'espace restant */
+    text-align: left; /* Aligne le texte à gauche */
+}
+
+.tp-details h3 {
+    font-size: 20px; /* Taille du titre */
+    margin-bottom: 10px; /* Espacement sous le titre */
+}
+
+.tp-details ul {
+    list-style: none; /* Supprime les puces */
+    padding: 0; /* Supprime le padding par défaut */
+}
+
+.tp-details ul li {
+    margin-bottom: 5px; /* Espacement entre les éléments de la liste */
+}
+
 .container {
     margin: 0 auto; /* Centre le contenu de la page */
     padding: 20px; /* Ajoute un espace intérieur autour du texte */
