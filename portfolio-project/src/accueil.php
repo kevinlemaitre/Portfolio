@@ -1,32 +1,25 @@
-<?php
-// filepath: c:\wamp64\www\Portfolio\src\accueil.php
-
-include 'includes/header.php';
-?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Portfolio</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Portfolio - Home</title>
 </head>
 <body>
+    <?php include 'includes/header.php'; ?>
+
     <main>
-        <h1>Welcome to My Portfolio</h1>
-        <p>This portfolio showcases my skills, experiences, and certifications. Explore the sections below to learn more about me.</p>
-        
-        <nav>
-            <ul>
-                <li><a href="presentation.php">Presentation</a></li>
-                <li><a href="stage.php">Stage</a></li>
-                <li><a href="certifications.php">Certifications</a></li>
-                <li><a href="veilles-informatiques.php">Veilles Informatiques</a></li>
-            </ul>
-        </nav>
+        <section class="presentation">
+            <h1>Bienvenue sur mon Portfolio</h1>
+            <p>
+                Bonjour, je m'appelle Kevin Lemaitre. Je suis Étudiant en BTS SIO, passionné(e) par l'informatique. 
+                Ce portfolio présente mes expériences, certifications, et mes veilles informatiques.
+            </p>
+            <a href="assets/cv/mon-cv.pdf" class="btn" download>Télécharger mon CV</a>
+        </section>
     </main>
 
-<?php
-include 'includes/footer.php';
-?>
+    <?php include 'includes/footer.php'; ?>
+</body>
+</html>

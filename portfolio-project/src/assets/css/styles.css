@@ -1,59 +1,74 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    background-color: #000000; /* Fond noir */
+    color: #ffffff; /* Texte blanc */
 }
 
-header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 10px 0;
-    text-align: center;
+a {
+    color: #1e90ff; /* Lien en bleu clair pour contraste */
 }
 
-nav {
-    margin: 10px 0;
-}
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px 15px;
-}
-
-nav a:hover {
-    background: #e8491d;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-footer {
-    background: #35424a;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-h1, h2, h3 {
-    color: #35424a;
+a:hover {
+    color: #00bfff; /* Lien en bleu plus clair au survol */
 }
 
 .card {
-    background: #ffffff;
-    border: 1px solid #dddddd;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 15px 0;
+    background: #1a1a1a; /* Fond des cartes en gris foncé */
+    color: #ffffff; /* Texte blanc */
+    border: 1px solid #333333; /* Bordure gris foncé */
 }
 
-.card:hover {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.btn {
+    background-color: #1e90ff; /* Bouton bleu clair */
+    color: #ffffff; /* Texte blanc */
+}
+
+.btn:hover {
+    background-color: #00bfff; /* Bouton bleu plus clair au survol */
+}
+
+header {
+    display: flex; /* Active Flexbox */
+    justify-content: space-between; /* Espace entre le titre et les liens */
+    align-items: center; /* Aligne verticalement les éléments */
+    background-color: #000000; /* Fond noir */
+    color: #ffffff; /* Texte blanc */
+    padding: 10px 20px; /* Ajoute un peu d'espace intérieur */
+}
+
+header h1 {
+    margin: 0; /* Supprime la marge par défaut */
+    font-size: 24px; /* Taille de la police pour le titre */
+    text-align: center; /* Centre le texte */
+    flex: 1; /* Permet au titre de prendre de l'espace */
+}
+
+header nav ul {
+    list-style: none; /* Supprime les puces */
+    display: flex; /* Aligne les liens horizontalement */
+    padding: 0; /* Supprime le padding par défaut */
+    margin: 0; /* Supprime la marge par défaut */
+}
+
+header nav ul li {
+    margin-left: 20px; /* Ajoute un espacement entre les liens */
+}
+
+header nav ul li a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: #ffffff; /* Texte blanc */
+    font-size: 16px; /* Taille de la police */
+    transition: color 0.3s ease; /* Animation pour le survol */
+}
+
+header nav ul li a:hover {
+    color: #1e90ff; /* Change la couleur au survol */
+}
+
+footer {
+    background-color: #000000; /* Fond noir */
+    color: #ffffff; /* Texte blanc */
+    padding: 10px 20px; /* Ajoute un peu d'espace intérieur */
+    text-align: center; /* Centre le texte dans le footer */
+    font-size: 14px; /* Taille de la police pour le footer */
+    margin-top: 20px; /* Ajoute un espacement au-dessus du footer */
 }
