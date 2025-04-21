@@ -1,0 +1,13 @@
+# The .htaccess file is used for configuring the web server, such as URL rewriting and access control.
+
+Options +FollowSymLinks
+RewriteEngine On
+
+# Redirect to the homepage
+RewriteRule ^$ src/accueil.php [L]
+
+# Rewrite rules for other pages
+RewriteRule ^presentation$ src/presentation.php [L]
+RewriteRule ^stage$ src/stage.php [L]
+RewriteRule ^certifications$ src/certifications.php [L]
+RewriteRule ^veilles-informatiques$ src/veilles-informatiques.php [L]
