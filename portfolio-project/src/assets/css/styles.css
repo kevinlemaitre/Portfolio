@@ -10,11 +10,29 @@ html, body {
 
 main {
     flex: 1; /* Permet au contenu principal de prendre tout l'espace disponible */
-    display: flex; /* Active Flexbox pour centrer le contenu */
+    text-align: left; /* Aligne le texte à gauche */
+    margin: 0 auto; /* Centre le contenu horizontalement si nécessaire */
+    max-width: 1200px; /* Limite la largeur maximale pour un meilleur rendu */
+    padding: 20px; /* Ajoute un espace intérieur autour du contenu */
+}
+
+.accueil {
+    display: flex; /* Active Flexbox */
     flex-direction: column; /* Organise les éléments en colonne */
     justify-content: center; /* Centre verticalement le contenu */
     align-items: center; /* Centre horizontalement le contenu */
+    flex: 1; /* Permet au contenu principal de prendre tout l'espace disponible */
+    margin: 0 auto; /* Centre le contenu horizontalement */
+    padding: 20px; /* Ajoute un espace intérieur autour du texte */
+    max-width: 1200px; /* Limite la largeur maximale */
     text-align: center; /* Centre le texte */
+}
+
+.container {
+    margin: 0 auto; /* Centre le contenu de la page */
+    padding: 20px; /* Ajoute un espace intérieur autour du texte */
+    max-width: 1200px; /* Limite la largeur maximale */
+    justify-content: center; /* Centre le contenu */
 }
 
 a {
@@ -140,10 +158,20 @@ header::after {
     right: 0;
 }
 
+footer::before {
+    content: ""; /* Ajoute un élément décoratif */
+    display: block;
+    width: 100%; /* Le trait occupe toute la largeur */
+    height: 2px; /* Épaisseur du trait */
+    background-color: #000000; /* Couleur noire pour le trait */
+    margin: 0 auto; /* Centre le trait horizontal */
+    position: absolute;
+    margin-bottom: 20px; /* Ajoute un espacement entre le trait et le contenu du footer */
+}
+
 footer {
     background-color: #ffffff; /* Fond noir */
     color: #000000; /* Texte blanc */
-    padding: 10px 20px; /* Ajoute un peu d'espace intérieur */
     text-align: center; /* Centre le texte dans le footer */
     font-size: 14px; /* Taille de la police pour le footer */
     margin-top: 20px; /* Ajoute un espacement au-dessus du footer */
