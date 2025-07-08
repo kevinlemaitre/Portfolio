@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+<script src="main.js"></script>
     <?php include 'includes/header.php'; ?>
 
         <div class="accueil">
